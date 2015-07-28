@@ -7,7 +7,7 @@ A very basic VR demo in Unity using Google's Cardboard SDK. This project accepts
 
 ###Build From Source
 * Open either the MultiStadium or SingleStadium scene in Unity
-* Press Ctrl+P (⌘ + P) to play in the editor. Alt can be used to move the stereoscopic camera in the editor
+* Press Ctrl+P (⌘ + P) to play in the editor. Alt handles the pitch and yaw, Ctrl handles the roll.
 * Press Ctrl + Shift + B (⌘ + Shift + B) to open the build dialog and switch the selected platform to Android. If you have an Android device already connected through ADB for debugging, simply press "Build and Run" to compile and deploy on the spot! This project can also be compiled to an Android Studio project and deployed there if needed.
 
 ### Contribute
@@ -15,3 +15,18 @@ A very basic VR demo in Unity using Google's Cardboard SDK. This project accepts
 2. Make a new branch using the gitflow model "feature/featurename"
 3. Make some changes & commit
 4. Make a pull request from your feature branch back to this master branch
+
+### License
+    Copyright 2015 Atomic Robot, LLC
+    
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+    http://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
