@@ -9,8 +9,8 @@ PlayerSettings:
   targetDevice: 2
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Cardborked
+  companyName: Atomic Robot LLC
+  productName: AR Cardboard
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -71,7 +71,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.atomicrobot.cardborked
+  bundleIdentifier: com.atomicrobot.arcardboard
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -80,7 +80,7 @@ PlayerSettings:
   virtualRealitySupported: 0
   productGUID: 51b0959b1e68b445ba0e9142a6db3123
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 9
+  AndroidMinSdkVersion: 15
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
