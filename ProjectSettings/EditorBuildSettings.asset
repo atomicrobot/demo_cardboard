@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/SingleStadium.unity
   - enabled: 1
+    path: Assets/SingleStadium.unity
+  - enabled: 0
     path: Assets/MultiStadium.unity
