@@ -42,7 +42,7 @@ namespace FileTableViewControllerNS
 			if (Application.platform == RuntimePlatform.Android)
 				musicPath += "sdcard/media";
 			else if (Application.platform == RuntimePlatform.OSXEditor)
-				musicPath += "/Nirvana";
+				musicPath += "";
 
 			DirectoryInfo dir = new DirectoryInfo(musicPath);
 			fileinfo = dir.GetFiles("*.mp3");
@@ -155,7 +155,7 @@ namespace FileTableViewControllerNS
 			string fullpath = "file://" + fileinfo [selectedCellIndex].FullName;
 			Debug.Log ("Play, " + fullpath);
 			WWW clip = new WWW (fullpath);
-			Debug.Log (clip.bytes);
+			//Debug.Log (clip.bytes);
 			audioSource.clip = clip.GetAudioClip (false, true);
 			audioSource.Play ();
 		}
