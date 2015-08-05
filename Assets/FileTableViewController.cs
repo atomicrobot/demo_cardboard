@@ -19,6 +19,9 @@ namespace FileTableViewControllerNS
         private int m_numInstancesCreated = 0;
 
 		private float scrollingVelocity = 0;
+		private float playGazeActivationThreshold = 3.0f;//3 seconds
+		private float playGazeActivationTime = 0.0f;
+		private bool playIsGazing = false;
 
         private Dictionary<int, float> m_customRowHeights;
 
@@ -45,6 +48,17 @@ namespace FileTableViewControllerNS
 
 		void Update(){
 			m_tableView.scrollY -= Time.deltaTime * scrollingVelocity;
+
+			if (playIsGazing) {
+				playGazeActivationTime += Time.deltaTime;
+				if(playGazeActivationTime > playGazeActivationThreshold){
+					play ();//run the activation method for the play button
+					playGazeActivationTime = 0.0f;
+				}
+			}
+			else{
+				playGazeActivationTime = 0.0f;
+			}
 		}
 
         #region ITableViewDataSource
@@ -89,18 +103,31 @@ namespace FileTableViewControllerNS
         }
 
 		public void scrollUp(){
-			Debug.Log ("Scroll up");
+			//Debug.Log ("Scroll up");
 			scrollingVelocity = 250.0f;
 		}
 
 		public void scrollDown(){
-			Debug.Log ("Scroll down");
+			//Debug.Log ("Scroll down");
 			scrollingVelocity = -250.0f;
 		}
 
 		public void scrollStop(){
-			Debug.Log ("Scroll Stop");
+			//Debug.Log ("Scroll Stop");
 			scrollingVelocity = 0.0f;
+		}
+
+		public void playStartGazing(){
+			playIsGazing = true;
+		}
+
+		public void playStopGazing(){
+			playIsGazing = false;
+		}
+
+		public void play(){
+			//the actual play button activation method
+			Debug.Log ("Play");
 		}
 
     }
