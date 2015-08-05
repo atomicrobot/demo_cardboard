@@ -14,10 +14,14 @@ namespace FileTableViewControllerNS
         public DetailTableCell m_cellPrefab;
         public TableView m_tableView;
 
-		public FileInfo[] info;
+		public FileInfo[] fileinfo;
+
+		public AudioSource audioSource;
 
         int m_numRows;
         private int m_numInstancesCreated = 0;
+
+		private string musicPath;
 
 		private float scrollingVelocity = 0;
 		private float playGazeActivationThreshold = 3.0f;//3 seconds
@@ -34,16 +38,18 @@ namespace FileTableViewControllerNS
             m_customRowHeights = new Dictionary<int, float>();
             m_tableView.dataSource = this;
 
-			string path = Directory.GetCurrentDirectory ();
+			musicPath = Directory.GetCurrentDirectory ();
 			if (Application.platform == RuntimePlatform.Android)
-				path += "/sdcard/media";
+				musicPath += "/sdcard/media";
 			else if (Application.platform == RuntimePlatform.OSXEditor)
-				path += "/Nirvana";
+				musicPath += "/Nirvana";
 
-			DirectoryInfo dir = new DirectoryInfo(path);
-			info = dir.GetFiles("*.mp3");
+			DirectoryInfo dir = new DirectoryInfo(musicPath);
+			fileinfo = dir.GetFiles("*.mp3");
 
-			m_numRows = info.Length;
+			m_numRows = fileinfo.Length;
+
+			audioSource = audioSource.GetComponent<AudioSource> ();
         }
 
 		void Awake(){
@@ -102,7 +108,7 @@ namespace FileTableViewControllerNS
             }
             cell.rowNumber = row;
             cell.height = GetHeightOfRow(row);
-			cell.m_rowNumberText.text = info [row].Name;
+			cell.m_rowNumberText.text = fileinfo [row].Name;
             return cell;
         }
 
@@ -146,7 +152,10 @@ namespace FileTableViewControllerNS
 
 		public void play(){
 			//the actual play button activation method
-			Debug.Log ("Play, " + selectedCellIndex);
+			Debug.Log ("Play, " + fileinfo[selectedCellIndex].FullName);
+			WWW clip = new WWW ("file:///" + fileinfo[selectedCellIndex].FullName);
+			audioSource.clip = clip.GetAudioClip (false, true);
+			audioSource.Play ();
 		}
 
     }
