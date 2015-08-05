@@ -299,7 +299,303 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 184
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ARM
+        weight: 1
+      - path: ARM/arm2
+        weight: 1
+      - path: ARM/arm2/transform605
+        weight: 1
+      - path: ARM/arm_1
+        weight: 1
+      - path: ARM/arm_1/transform602
+        weight: 1
+      - path: ARM/base
+        weight: 1
+      - path: ARM/base/transform606
+        weight: 1
+      - path: ARM/claw
+        weight: 1
+      - path: ARM/claw/transform603
+        weight: 1
+      - path: ARM/topcube
+        weight: 1
+      - path: ARM/topcube/transform604
+        weight: 1
+      - path: pCube106
+        weight: 1
+      - path: pCube106/transform663
+        weight: 1
+      - path: pCube107
+        weight: 1
+      - path: pCube107/transform650
+        weight: 1
+      - path: pCube108
+        weight: 1
+      - path: pCube108/transform642
+        weight: 1
+      - path: pCube109
+        weight: 1
+      - path: pCube109/transform641
+        weight: 1
+      - path: pCube110
+        weight: 1
+      - path: pCube110/transform640
+        weight: 1
+      - path: pCube111
+        weight: 1
+      - path: pCube111/transform639
+        weight: 1
+      - path: pCube112
+        weight: 1
+      - path: pCube112/transform638
+        weight: 1
+      - path: pCube113
+        weight: 1
+      - path: pCube113/transform637
+        weight: 1
+      - path: pCube114
+        weight: 1
+      - path: pCube114/transform635
+        weight: 1
+      - path: pCube115
+        weight: 1
+      - path: pCube115/transform634
+        weight: 1
+      - path: pCube116
+        weight: 1
+      - path: pCube116/transform629
+        weight: 1
+      - path: pCube117
+        weight: 1
+      - path: pCube117/transform615
+        weight: 1
+      - path: pCube118
+        weight: 1
+      - path: pCube118/transform614
+        weight: 1
+      - path: pCube119
+        weight: 1
+      - path: pCube119/transform613
+        weight: 1
+      - path: pCube121
+        weight: 1
+      - path: pCube121/transform600
+        weight: 1
+      - path: pCube122
+        weight: 1
+      - path: pCube122/transform599
+        weight: 1
+      - path: pCube123
+        weight: 1
+      - path: pCube123/transform598
+        weight: 1
+      - path: pCube124
+        weight: 1
+      - path: pCube124/transform612
+        weight: 1
+      - path: pCube125
+        weight: 1
+      - path: pCube125/transform608
+        weight: 1
+      - path: pCube126
+        weight: 1
+      - path: pCube126/transform607
+        weight: 1
+      - path: pCylinder80
+        weight: 1
+      - path: pCylinder80/transform659
+        weight: 1
+      - path: pCylinder81
+        weight: 1
+      - path: pCylinder81/transform658
+        weight: 1
+      - path: pCylinder82
+        weight: 1
+      - path: pCylinder82/transform657
+        weight: 1
+      - path: pCylinder83
+        weight: 1
+      - path: pCylinder83/transform656
+        weight: 1
+      - path: pCylinder84
+        weight: 1
+      - path: pCylinder84/transform655
+        weight: 1
+      - path: pCylinder85
+        weight: 1
+      - path: pCylinder85/transform654
+        weight: 1
+      - path: pCylinder86
+        weight: 1
+      - path: pCylinder86/transform653
+        weight: 1
+      - path: pCylinder87
+        weight: 1
+      - path: pCylinder87/transform652
+        weight: 1
+      - path: pCylinder88
+        weight: 1
+      - path: pCylinder88/transform651
+        weight: 1
+      - path: pCylinder89
+        weight: 1
+      - path: pCylinder89/transform649
+        weight: 1
+      - path: pCylinder90
+        weight: 1
+      - path: pCylinder90/transform648
+        weight: 1
+      - path: pCylinder91
+        weight: 1
+      - path: pCylinder91/transform647
+        weight: 1
+      - path: pCylinder92
+        weight: 1
+      - path: pCylinder92/transform646
+        weight: 1
+      - path: pCylinder93
+        weight: 1
+      - path: pCylinder93/transform645
+        weight: 1
+      - path: pCylinder94
+        weight: 1
+      - path: pCylinder94/transform644
+        weight: 1
+      - path: pCylinder95
+        weight: 1
+      - path: pCylinder95/transform643
+        weight: 1
+      - path: pCylinder97
+        weight: 1
+      - path: pCylinder97/transform633
+        weight: 1
+      - path: pCylinder98
+        weight: 1
+      - path: pCylinder98/transform632
+        weight: 1
+      - path: pCylinder99
+        weight: 1
+      - path: pCylinder99/transform631
+        weight: 1
+      - path: pCylinder100
+        weight: 1
+      - path: pCylinder100/transform630
+        weight: 1
+      - path: pCylinder101
+        weight: 1
+      - path: pCylinder101/transform628
+        weight: 1
+      - path: pCylinder107
+        weight: 1
+      - path: pCylinder107/transform597
+        weight: 1
+      - path: pCylinder108
+        weight: 1
+      - path: pCylinder108/transform611
+        weight: 1
+      - path: polySurface344
+        weight: 1
+      - path: polySurface344/transform662
+        weight: 1
+      - path: polySurface345
+        weight: 1
+      - path: polySurface345/transform661
+        weight: 1
+      - path: polySurface346
+        weight: 1
+      - path: polySurface346/transform660
+        weight: 1
+      - path: polySurface347
+        weight: 1
+      - path: polySurface347/transform636
+        weight: 1
+      - path: polySurface348
+        weight: 1
+      - path: polySurface348/transform627
+        weight: 1
+      - path: polySurface349
+        weight: 1
+      - path: polySurface349/transform626
+        weight: 1
+      - path: polySurface350
+        weight: 1
+      - path: polySurface350/transform625
+        weight: 1
+      - path: polySurface351
+        weight: 1
+      - path: polySurface351/transform624
+        weight: 1
+      - path: polySurface352
+        weight: 1
+      - path: polySurface352/transform623
+        weight: 1
+      - path: polySurface353
+        weight: 1
+      - path: polySurface353/transform622
+        weight: 1
+      - path: polySurface354
+        weight: 1
+      - path: polySurface354/transform621
+        weight: 1
+      - path: polySurface355
+        weight: 1
+      - path: polySurface355/transform620
+        weight: 1
+      - path: polySurface356
+        weight: 1
+      - path: polySurface356/transform619
+        weight: 1
+      - path: polySurface357
+        weight: 1
+      - path: polySurface357/transform618
+        weight: 1
+      - path: polySurface358
+        weight: 1
+      - path: polySurface358/transform617
+        weight: 1
+      - path: polySurface359
+        weight: 1
+      - path: polySurface359/transform616
+        weight: 1
+      - path: polySurface361
+        weight: 1
+      - path: polySurface361/transform610
+        weight: 1
+      - path: polySurface362
+        weight: 1
+      - path: polySurface362/transform609
+        weight: 1
+      - path: polySurface447
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

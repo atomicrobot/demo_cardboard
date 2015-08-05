@@ -11,6 +11,7 @@ namespace FileTableViewControllerNS
     //An example implementation of a class that communicates with a TableView
     public class FileTableViewController : MonoBehaviour, ITableViewDataSource
     {
+		public GameObject jeep;
         public DetailTableCell m_cellPrefab;
         public TableView m_tableView;
 
@@ -158,6 +159,9 @@ namespace FileTableViewControllerNS
 			Debug.Log (clip.bytes);
 			audioSource.clip = clip.GetAudioClip (false, true);
 			audioSource.Play ();
+			//Animation Anime = jeep.GetComponent<Animation> ();
+			//Anime.Play ("Take 001");
+			//Debug.Log (Anime.Play ());
 		}
 
     }
