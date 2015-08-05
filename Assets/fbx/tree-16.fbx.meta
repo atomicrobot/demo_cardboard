@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: c483b6123d7fb4bc99857d1b2d43c394
+timeCreated: 1438801774
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: group2
+    100002: pCube23
+    100004: polySurface2
+    100006: pSphere43
+    100008: pSphere44
+    100010: pSphere45
+    100012: pSphere46
+    100014: pSphere47
+    100016: pSphere48
+    100018: pSphere49
+    100020: pSphere50
+    100022: pSphere51
+    100024: transform11
+    100026: transform12
+    100028: transform13
+    100030: transform14
+    100032: transform15
+    100034: transform16
+    100036: transform17
+    100038: transform18
+    100040: transform19
+    100042: transform20
+    100044: //RootNode
+    400000: group2
+    400002: pCube23
+    400004: polySurface2
+    400006: pSphere43
+    400008: pSphere44
+    400010: pSphere45
+    400012: pSphere46
+    400014: pSphere47
+    400016: pSphere48
+    400018: pSphere49
+    400020: pSphere50
+    400022: pSphere51
+    400024: transform11
+    400026: transform12
+    400028: transform13
+    400030: transform14
+    400032: transform15
+    400034: transform16
+    400036: transform17
+    400038: transform18
+    400040: transform19
+    400042: transform20
+    400044: //RootNode
+    2300000: polySurface2
+    3300000: polySurface2
+    4300000: polySurface2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
