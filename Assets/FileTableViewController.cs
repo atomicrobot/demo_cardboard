@@ -65,11 +65,7 @@ namespace FileTableViewControllerNS
         #endregion
 
         private float GetHeightOfRow(int row) {
-            if (m_customRowHeights.ContainsKey(row)) {
-                return m_customRowHeights[row];
-            } else {
-                return m_cellPrefab.height;
-            }
+			return 30.0f;
         }
 
         private void OnCellHeightChanged(int row, float newHeight) {
