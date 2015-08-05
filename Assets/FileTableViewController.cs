@@ -24,6 +24,8 @@ namespace FileTableViewControllerNS
 		private float playGazeActivationTime = 0.0f;
 		private bool playIsGazing = false;
 
+		private int selectedCellIndex = 0;
+
         private Dictionary<int, float> m_customRowHeights;
 
         //Register as the TableView's delegate (required) and data source (optional)
@@ -61,15 +63,11 @@ namespace FileTableViewControllerNS
 				playGazeActivationTime = 0.0f;
 			}
 
-
-
 			//DetailTableCell temp = m_tableView.GetCellAtRow (0) as DetailTableCell;
 			//temp.GetComponent<Image> ().color = new Color(0.5f, 0.5f, 1.0f, 0.75f);
 			//Debug.Log (m_tableView.visibleRowRange.from );
-
-			Debug.Log (m_tableView.visibleRowRange.count);
-
-			int selectedCellIndex = (int)( m_numRows * (m_tableView.scrollY / m_tableView.scrollableHeight));
+			
+			selectedCellIndex = (int)( m_numRows * (m_tableView.scrollY / m_tableView.scrollableHeight));
 			selectedCellIndex = Mathf.Clamp (selectedCellIndex, 0, m_numRows-1);
 
 			for (int i=0;i<m_numRows;i++){
@@ -125,12 +123,12 @@ namespace FileTableViewControllerNS
 
 		public void scrollUp(){
 			//Debug.Log ("Scroll up");
-			scrollingVelocity = 250.0f;
+			scrollingVelocity = 100.0f;
 		}
 
 		public void scrollDown(){
 			//Debug.Log ("Scroll down");
-			scrollingVelocity = -250.0f;
+			scrollingVelocity = -100.0f;
 		}
 
 		public void scrollStop(){
@@ -148,7 +146,7 @@ namespace FileTableViewControllerNS
 
 		public void play(){
 			//the actual play button activation method
-			Debug.Log ("Play");
+			Debug.Log ("Play, " + selectedCellIndex);
 		}
 
     }
