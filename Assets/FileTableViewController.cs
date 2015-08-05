@@ -26,7 +26,10 @@ namespace FileTableViewControllerNS
             m_customRowHeights = new Dictionary<int, float>();
             m_tableView.dataSource = this;
 
-			string path = Directory.GetCurrentDirectory () + "/Nirvana";
+			string path = Directory.GetCurrentDirectory ();
+			if (Application.platform == RuntimePlatform.Android)
+				path += "/sdcard/media";
+
 			DirectoryInfo dir = new DirectoryInfo(path);
 			info = dir.GetFiles("*.mp3");
 
