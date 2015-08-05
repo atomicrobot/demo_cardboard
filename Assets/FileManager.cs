@@ -10,6 +10,7 @@ public class FileManager : MonoBehaviour {
 
 		Debug.Log ("PWD: " + path);
 
+
 		DirectoryInfo dir = new DirectoryInfo(path);
 		FileInfo[] info = dir.GetFiles("*.*");
 		foreach (FileInfo f in info) 

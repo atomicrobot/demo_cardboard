@@ -29,6 +29,7 @@ public class Teleport : MonoBehaviour {
   }
 
   public void Reset() {
+		Debug.Log ("reset!");
     transform.localPosition = startingPosition;
   }
 
