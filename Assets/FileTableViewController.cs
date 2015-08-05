@@ -18,6 +18,8 @@ namespace FileTableViewControllerNS
         int m_numRows;
         private int m_numInstancesCreated = 0;
 
+		private float scrollingVelocity = 0;
+
         private Dictionary<int, float> m_customRowHeights;
 
         //Register as the TableView's delegate (required) and data source (optional)
@@ -26,7 +28,7 @@ namespace FileTableViewControllerNS
             m_customRowHeights = new Dictionary<int, float>();
             m_tableView.dataSource = this;
 
-			string path = Directory.GetCurrentDirectory ();
+			string path = Directory.GetCurrentDirectory () + "/Nirvana";
 			if (Application.platform == RuntimePlatform.Android)
 				path += "/sdcard/media";
 
@@ -35,6 +37,10 @@ namespace FileTableViewControllerNS
 
 			m_numRows = info.Length;
         }
+
+		void Update(){
+			m_tableView.scrollY -= Time.deltaTime * scrollingVelocity;
+		}
 
         #region ITableViewDataSource
 
@@ -78,11 +84,18 @@ namespace FileTableViewControllerNS
         }
 
 		public void scrollUp(){
-			m_tableView.scrollY -= Time.deltaTime * 750;	
+			Debug.Log ("Scroll up");
+			scrollingVelocity = -750.0f;
 		}
 
 		public void scrollDown(){
-			m_tableView.scrollY += Time.deltaTime * 750;	
+			Debug.Log ("Scroll down");
+			scrollingVelocity = 750.0f;
+		}
+
+		public void scrollStop(){
+			Debug.Log ("Scroll Stop");
+			scrollingVelocity = 0.0f;
 		}
 
     }
