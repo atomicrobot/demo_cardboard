@@ -4,6 +4,7 @@ using Tacticsoft;
 using Tacticsoft.Examples;
 using System.IO;
 using DetailTableCellNS;
+using UnityEngine.UI;
 
 namespace FileTableViewControllerNS
 {
@@ -58,6 +59,26 @@ namespace FileTableViewControllerNS
 			}
 			else{
 				playGazeActivationTime = 0.0f;
+			}
+
+
+
+			//DetailTableCell temp = m_tableView.GetCellAtRow (0) as DetailTableCell;
+			//temp.GetComponent<Image> ().color = new Color(0.5f, 0.5f, 1.0f, 0.75f);
+			//Debug.Log (m_tableView.visibleRowRange.from );
+
+			Debug.Log (m_tableView.visibleRowRange.count);
+
+			int selectedCellIndex = (int)( m_numRows * (m_tableView.scrollY / m_tableView.scrollableHeight));
+			selectedCellIndex = Mathf.Clamp (selectedCellIndex, 0, m_numRows-1);
+
+			for (int i=0;i<m_numRows;i++){
+				DetailTableCell temp = m_tableView.GetCellAtRow(i) as DetailTableCell;
+				if (temp != null){
+					temp.GetComponent<Image>().color = Color.white;
+					if (temp.rowNumber == selectedCellIndex)
+						temp.GetComponent<Image>().color = new Color(0.5f, 0.5f, 1.0f, 0.5f);
+				}
 			}
 		}
 
