@@ -20,7 +20,7 @@ namespace Tacticsoft.Examples
         public CellHeightChangedEvent onCellHeightChanged;
 
         void Update() {
-            m_rowNumberText.text = "Row " + rowNumber.ToString();
+            //m_rowNumberText.text = "Row " + rowNumber.ToString();
         }
 
         public void SliderValueChanged(float value) {
@@ -31,7 +31,6 @@ namespace Tacticsoft.Examples
             get { return m_cellHeightSlider.value; }
             set { m_cellHeightSlider.value = value; }
         }
-
 
     }
 }

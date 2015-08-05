@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Tacticsoft;
 using Tacticsoft.Examples;
+using System.IO;
 
 namespace FileTableViewControllerNS
 {
@@ -11,7 +12,9 @@ namespace FileTableViewControllerNS
         public DynamicHeightCell m_cellPrefab;
         public TableView m_tableView;
 
-        public int m_numRows;
+		public FileInfo[] info;
+
+        int m_numRows;
         private int m_numInstancesCreated = 0;
 
         private Dictionary<int, float> m_customRowHeights;
@@ -21,10 +24,12 @@ namespace FileTableViewControllerNS
         void Start() {
             m_customRowHeights = new Dictionary<int, float>();
             m_tableView.dataSource = this;
-        }
 
-        public void SendBeer() {
-            Application.OpenURL("https://www.paypal.com/cgi-bin/webscr?business=contact@tacticsoft.net&cmd=_xclick&item_name=Beer%20for%20TSTableView&currency_code=USD&amount=5.00");
+			string path = Directory.GetCurrentDirectory ();
+			DirectoryInfo dir = new DirectoryInfo(path);
+			info = dir.GetFiles("*.mp3");
+
+			m_numRows = info.Length;
         }
 
         #region ITableViewDataSource
@@ -49,6 +54,7 @@ namespace FileTableViewControllerNS
             }
             cell.rowNumber = row;
             cell.height = GetHeightOfRow(row);
+			cell.m_rowNumberText.text = info [row].Name;
             return cell;
         }
 

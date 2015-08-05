@@ -372,35 +372,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -.000485152006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: .00056822598
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_SizeDelta.x
-      value: -10.0007229
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_SizeDelta.y
-      value: -10.0011349
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: .150000006
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: .171750396
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: .849863052
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: .854000032
       objectReference: {fileID: 0}
     - target: {fileID: 22492706, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_Pivot.x
@@ -416,6 +416,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22495710, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495712, guid: de9c2ec912e8f2d4cae1a7a05f83655a, type: 2}
+      propertyPath: m_Value
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -445,12 +449,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1375236468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553b1ceda5c7f134ab2265e518bebfed, type: 3}
+  m_Script: {fileID: 11500000, guid: b87b80c8ded2c4e34b41ae1def88e3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_cellPrefab: {fileID: 11449630, guid: 783acf8d733c2e4498817145b129a571, type: 2}
   m_tableView: {fileID: 1751037499}
-  m_numRows: 5
 --- !u!4 &1375236470
 Transform:
   m_ObjectHideFlags: 0
