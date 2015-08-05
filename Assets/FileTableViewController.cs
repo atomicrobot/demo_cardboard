@@ -155,7 +155,7 @@ namespace FileTableViewControllerNS
 			string fullpath = "file://" + fileinfo [selectedCellIndex].FullName;
 			Debug.Log ("Play, " + fullpath);
 			WWW clip = new WWW (fullpath);
-			//Debug.Log (clip.bytes);
+			Debug.Log (clip.bytes);
 			audioSource.clip = clip.GetAudioClip (false, true);
 			audioSource.Play ();
 		}
