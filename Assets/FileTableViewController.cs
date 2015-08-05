@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using Tacticsoft;
 using Tacticsoft.Examples;
 using System.IO;
+using DetailTableCellNS;
 
 namespace FileTableViewControllerNS
 {
     //An example implementation of a class that communicates with a TableView
     public class FileTableViewController : MonoBehaviour, ITableViewDataSource
     {
-        public DynamicHeightCell m_cellPrefab;
+        public DetailTableCell m_cellPrefab;
         public TableView m_tableView;
 
 		public FileInfo[] info;
@@ -46,9 +47,9 @@ namespace FileTableViewControllerNS
 
         //Will be called by the TableView when a cell needs to be created for display
         public TableViewCell GetCellForRowInTableView(TableView tableView, int row) {
-            DynamicHeightCell cell = tableView.GetReusableCell(m_cellPrefab.reuseIdentifier) as DynamicHeightCell;
+            DetailTableCell cell = tableView.GetReusableCell(m_cellPrefab.reuseIdentifier) as DetailTableCell;
             if (cell == null) {
-                cell = (DynamicHeightCell)GameObject.Instantiate(m_cellPrefab);
+                cell = (DetailTableCell)GameObject.Instantiate(m_cellPrefab);
                 cell.name = "DynamicHeightCellInstance_" + (++m_numInstancesCreated).ToString();
                 cell.onCellHeightChanged.AddListener(OnCellHeightChanged);
             }
