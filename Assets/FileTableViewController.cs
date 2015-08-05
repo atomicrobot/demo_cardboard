@@ -28,15 +28,20 @@ namespace FileTableViewControllerNS
             m_customRowHeights = new Dictionary<int, float>();
             m_tableView.dataSource = this;
 
-			string path = Directory.GetCurrentDirectory () + "/Nirvana";
+			string path = Directory.GetCurrentDirectory ();
 			if (Application.platform == RuntimePlatform.Android)
 				path += "/sdcard/media";
+			else if (Application.platform == RuntimePlatform.OSXEditor)
+				path += "/Nirvana";
 
 			DirectoryInfo dir = new DirectoryInfo(path);
 			info = dir.GetFiles("*.mp3");
 
 			m_numRows = info.Length;
         }
+
+		void Awake(){
+		}
 
 		void Update(){
 			m_tableView.scrollY -= Time.deltaTime * scrollingVelocity;
@@ -85,12 +90,12 @@ namespace FileTableViewControllerNS
 
 		public void scrollUp(){
 			Debug.Log ("Scroll up");
-			scrollingVelocity = -750.0f;
+			scrollingVelocity = 250.0f;
 		}
 
 		public void scrollDown(){
 			Debug.Log ("Scroll down");
-			scrollingVelocity = 750.0f;
+			scrollingVelocity = -250.0f;
 		}
 
 		public void scrollStop(){

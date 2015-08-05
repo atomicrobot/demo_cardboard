@@ -875,7 +875,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1375236469}
-          m_MethodName: scrollDown
+          m_MethodName: scrollStop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
