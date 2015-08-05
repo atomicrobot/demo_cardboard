@@ -26,7 +26,7 @@ namespace FileTableViewControllerNS
             m_customRowHeights = new Dictionary<int, float>();
             m_tableView.dataSource = this;
 
-			string path = Directory.GetCurrentDirectory ();
+			string path = Directory.GetCurrentDirectory () + "/Nirvana";
 			DirectoryInfo dir = new DirectoryInfo(path);
 			info = dir.GetFiles("*.mp3");
 
@@ -77,6 +77,14 @@ namespace FileTableViewControllerNS
             m_customRowHeights[row] = newHeight;
             m_tableView.NotifyCellDimensionsChanged(row);
         }
+
+		public void scrollUp(){
+			m_tableView.scrollY -= Time.deltaTime * 750;	
+		}
+
+		public void scrollDown(){
+			m_tableView.scrollY += Time.deltaTime * 750;	
+		}
 
     }
 }
