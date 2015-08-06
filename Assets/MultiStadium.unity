@@ -974,7 +974,7 @@ GameObject:
   - 114: {fileID: 766110949}
   - 114: {fileID: 766110948}
   m_Layer: 5
-  m_Name: Button
+  m_Name: btnPlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1062,7 +1062,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0, g: .866666675, b: 1, a: 1}
@@ -1306,6 +1306,7 @@ MonoBehaviour:
   jeep: {fileID: 62377475}
   m_cellPrefab: {fileID: 11409504, guid: a587faa3ddd23433c82e3b6fea45c221, type: 2}
   m_tableView: {fileID: 377816445}
+  btnPlay: {fileID: 766110946}
   audioSource: {fileID: 1963785221}
 --- !u!4 &911128566
 Transform:

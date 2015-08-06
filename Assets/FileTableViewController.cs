@@ -14,10 +14,12 @@ namespace FileTableViewControllerNS
 		public GameObject jeep;
         public DetailTableCell m_cellPrefab;
         public TableView m_tableView;
+		public GameObject btnPlay;
 
 		public FileInfo[] fileinfo;
 
 		public AudioSource audioSource;
+
 
         int m_numRows;
         private int m_numInstancesCreated = 0;
@@ -61,6 +63,9 @@ namespace FileTableViewControllerNS
 
 			if (playIsGazing) {
 				playGazeActivationTime += Time.deltaTime;
+				float r = 1.0f - (playGazeActivationTime/playGazeActivationThreshold);
+				float g = r;
+				btnPlay.GetComponent<Image>().color = new Color(r, g, 1.0f, 1.0f);
 				if(playGazeActivationTime > playGazeActivationThreshold){
 					play ();//run the activation method for the play button
 					playGazeActivationTime = 0.0f;
@@ -149,6 +154,7 @@ namespace FileTableViewControllerNS
 
 		public void playStopGazing(){
 			playIsGazing = false;
+			btnPlay.GetComponent<Image>().color = new Color(1.0f,1.0f, 1.0f, 1.0f);
 		}
 
 		public void play(){
