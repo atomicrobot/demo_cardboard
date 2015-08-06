@@ -27,7 +27,7 @@ namespace FileTableViewControllerNS
 		private string musicPath;
 
 		private float scrollingVelocity = 0;
-		private float playGazeActivationThreshold = 3.0f;//3 seconds
+		private float playGazeActivationThreshold = 1.0f;//2 seconds
 		private float playGazeActivationTime = 0.0f;
 		private bool playIsGazing = false;
 
@@ -65,7 +65,8 @@ namespace FileTableViewControllerNS
 				playGazeActivationTime += Time.deltaTime;
 				float r = 1.0f - (playGazeActivationTime/playGazeActivationThreshold);
 				float g = r;
-				btnPlay.GetComponent<Image>().color = new Color(r, g, 1.0f, 1.0f);
+				float b = r;
+				btnPlay.GetComponent<Image>().color = new Color(r, 1.0f, b, 1.0f);
 				if(playGazeActivationTime > playGazeActivationThreshold){
 					play ();//run the activation method for the play button
 					playGazeActivationTime = 0.0f;
